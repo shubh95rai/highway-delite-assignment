@@ -7,12 +7,14 @@ A modern, full-stack **Notes Application** built using the **MERN Stack**. It su
 ## ✨ Features
 
 ### 👥 Users
+
 - 🔐 **Sign up / Sign in** with **Email + OTP (One-Time Password)**
 - 📧 **OTP Verification** (via Email)
 - 🎟️ **JWT Authentication** for secure API access
 - 📱 **Fully Responsive UI**
 
 ### 📝 Notes
+
 - ➕ **Create Notes**
 - ❌ **Delete Notes**
 - 👤 **User-specific Notes**
@@ -23,6 +25,7 @@ A modern, full-stack **Notes Application** built using the **MERN Stack**. It su
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 - React.js
 - Tailwind CSS
 - Zustand (State Management)
@@ -30,7 +33,8 @@ A modern, full-stack **Notes Application** built using the **MERN Stack**. It su
 - Axios
 
 ### Backend
-- Node.js + Express.js 
+
+- Node.js + Express.js
 - MongoDB + Mongoose
 - JSON Web Token (JWT)
 - Nodemailer (for OTP emails)
@@ -38,23 +42,26 @@ A modern, full-stack **Notes Application** built using the **MERN Stack**. It su
 ---
 
 ## 📦 Features in Detail
-- **OTP Authentication**: Secure email-based login without passwords  
-- **JWT Authorization**: Protects create/delete note routes  
-- **Responsive Design**: Works across mobile, tablet, and desktop  
-- **Zustand Store**: Lightweight state management for user and notes  
-- **Error Handling**: Inline + toast error messages for OTP mismatch, invalid inputs, or API errors  
+
+- **OTP Authentication**: Secure email-based login without passwords
+- **JWT Authorization**: Protects create/delete note routes
+- **Responsive Design**: Works across mobile, tablet, and desktop
+- **Zustand Store**: Lightweight state management for user and notes
+- **Error Handling**: Inline + toast error messages for OTP mismatch, invalid inputs, or API errors
 
 ---
 
 ## ⚙️ Installation & Setup
 
 ### 1️⃣ Clone the repo
+
 ```bash
 git clone https://github.com/shubh95rai/highway-delite-assignment.git
 cd highway-delite-assignment
 ```
 
 ### 2️⃣ Backend Setup
+
 ```bash
 cd backend
 npm install
@@ -62,30 +69,39 @@ npm run dev
 ```
 
 #### `backend/.env`
+
 ```env
 PORT=5000
 MONGO_URI=your_mongo_connection_string
 JWT_SECRET=your_jwt_secret
-SMTP_HOST=smtp.example.com
-SMTP_PORT=587
-SMTP_USER=your_email@example.com
-SMTP_PASS=your_password
+CLIENT_URL=http://localhost:5173
+EMAIL_USER=your_email
+EMAIL_PASS=your_password
+NODE_ENV=developement
 ```
 
 ### 3️⃣ Frontend Setup
+
 ```bash
 cd ../frontend
 npm install
 npm run dev
 ```
 
+#### `frontend/.env`
+
+```env
+VITE_BASE_URL=http://localhost:5000
+```
+
 ---
 
 ## ▶️ Usage
-1. Go to **Sign Up** page and register with your email  
-2. Enter OTP received in your email inbox  
-3. Get redirected to the **Welcome page**  
-4. Create and delete your notes 🚀  
+
+1. Go to **Sign Up** page and register with your email
+2. Enter OTP received in your email inbox
+3. Get redirected to the **Welcome page**
+4. Create and delete your notes 🚀
 
 ---
 
