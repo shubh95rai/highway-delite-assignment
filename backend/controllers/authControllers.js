@@ -1,8 +1,8 @@
 import User from "../models/User.js";
 import sendOtpToEmail from "../config/emailService.js";
 import otpGenerator from "../utils/otpGenerator.js";
-import { generateTokenAndSetCookie } from "../../../whatsapp-clone/backend/utils/token.js";
 import { clearTokenCookie } from "../utils/token.js";
+import { generateTokenAndSetCookie } from "../utils/token.js";
 
 export async function getOtpOnSignUp(req, res) {
   const { name, dateOfBirth, email } = req.body;
